@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         }
 
         recycleview = (me.leefeng.lfrecyclerview.LFRecyclerView) findViewById(R.id.recycleview);
-        recycleview.setLoadMore(true);
-        recycleview.setRefresh(true);
-        recycleview.setNoDateShow();
-        recycleview.setAutoLoadMore(true);
-        recycleview.setOnItemClickListener(this);
+//        recycleview.setLoadMore(true);
+//        recycleview.setRefresh(true);
+//        recycleview.setNoDateShow();
+//        recycleview.setAutoLoadMore(true);
+//        recycleview.setOnItemClickListener(this);
         recycleview.setLFRecyclerViewListener(this);
-        recycleview.setScrollChangeListener(this);
+//        recycleview.setScrollChangeListener(this);
         recycleview.setItemAnimator(new DefaultItemAnimator());
         adapter = new MainAdapter(list);
         recycleview.setAdapter(adapter);

@@ -316,6 +316,14 @@ public class LFRecyclerView extends RecyclerView {
             }
         });
         observer = new LFAdapterDataObserver();
+        recyclerViewFooter.getmHintView().setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (LFRecyclerViewFooter.STATE_NORMAL == recyclerViewFooter.getmState()){
+                    startLoadMore();
+                }
+            }
+        });
     }
 
     class LFAdapterDataObserver extends AdapterDataObserver {
